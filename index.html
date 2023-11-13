@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <!-- Montserrat   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    
+    <!-- Lilita One  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+
+    <style type="text/tailwindcss">
+        @layer components {
+            .center-all {
+                @apply grid place-items-center
+            }
+
+            .normal-img {
+                @apply bg-cover bg-center bg-no-repeat
+            }
+
+            .skill-modify {
+                @apply inline-flex text-sm rounded-full px-3 py-1.5 bg-gray-100 mb-2 mr-1
+            }
+
+        }
+    </style>
+
+    <style>
+        * {
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        .font-lili {
+            font-family: 'Lilita One', sans-serif;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(233, 234, 255, 0.292);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        .user-img {
+            box-shadow: 0 8px 32px 0 rgba(233, 234, 255, 0.292);
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.4);
+            aspect-ratio: 3/4;
+            margin: 0px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="h-screen relative">
+        <div class="absolute inset-0 bg-fixed center-all normal-img" style="background-image: url(background.jpeg);">
+            <div class="container max-w-4xl pt-5 px-14">
+                <div class="font-lili text-center text-3xl mb-10 tracking-wide">About Me</div>
+                <div class="content flex gap-6 bg-red-100">
+                    <div class="basis-4/12">
+                        <div class="bg-center bg-no-repeat bg-contain h-8 my-5" style="background-image: url(https://lh3.googleusercontent.com/pw/ADCreHdaOMYiUdjIlNAkd_b5__H927yPc0fySkMRdRf1qaRgU26I1UW89DW_9LsfRbU7yvUEOfkbvk1sYWqNZIgNFAf40q51O1fZeMm91sAFycV-reJJcLw=w2400);">
+
+                        </div>
+
+                        <div class="user-img normal-img bg-clip-padding" style="background-image: url(https://i.pinimg.com/564x/4b/b8/73/4bb8732c5cbd0fbab68eb624f05e93b9.jpg);">
+
+                        </div>
+
+                    </div>
+
+                    <div class="myself flex-1">
+                        <p class="myself_interview mt-5 text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis,
+                            expedita. Exercitationem fugiat earum suscipit itaque. Eveniet pariatur earum asperiores
+                            quam adipisci voluptate dignissimos quas! Architecto magnam facere beatae dolorem vitae?
+                        </p>
+
+                        <div class="mt-3">
+                            <p class="font-semibold text-[17px] mb-2.5">Skills</p>
+                            <ul class="">
+                                <li class="skill-modify">HTML</li>
+                                <li class="skill-modify">CSS</li>
+                                <li class="skill-modify">Tailwincss</li>
+                                <li class="skill-modify">C++</li>
+                                <li class="skill-modify">Javascript</li>
+                                <li class="skill-modify">Balalalalfdsafdsaf</li>
+                            </ul>
+                        </div>
+
+                        <div class="text-[17px] font-semibold mt-4 mb-12 flex gap-3">
+                            <div class="p-1.5 relative after:absolute after:bottom-0 after:inset-x-3 after:block after:h-0.5 after:auto after:bg-red-500 text-red-500">Personal Infomation</div>
+                            <div class="p-1.5 relative after:absolute after:bottom-0 after:inset-x-3 after:block after:h-0.5 after:auto after:bg-red-500 text-red-500">Education</div>
+                        </div>
+
+                        <div>
+                            <ul>
+                                <li class="flex text-[17px] font-semibold">
+                                    <!-- Nối  -->
+                                    <div class="w-[1px] bg-red-500 relative after:rounded-full after:absolute after:h-2.5 after:w-2.5 after:block after:bg-red-500 after:top-1.5 after:left-1/2 after:-translate-x-1/2 mr-8 ml-1">
+
+                                    </div>
+                                    <!-- Content  -->
+                                    <div class="text">
+                                        <p class="">Introduction</p>
+                                        
+                                        
+                                    </div>
+                                </li>
+
+                                <li class="flex mt-8">
+                                    <!-- Nối  -->
+                                    <div class="w-[1px] bg-red-500 relative after:rounded-full after:absolute after:h-2.5 after:w-2.5 after:block after:bg-red-500 after:top-1.5 after:left-1/2 after:-translate-x-1/2 mr-8 ml-1 before:absolute before:w-[1px] before:h-8 before:-top-8 before:bg-red-500 before:left-0">
+
+                                    </div>
+                                    <!-- Content  -->
+                                    <div >
+                                        <p>Hobbies</p>
+                                    </div>
+                                </li>
+
+                                <li class="flex mt-8">
+                                    <!-- Nối  -->
+                                    <div class="w-[1px] bg-red-500 relative after:rounded-full after:absolute after:h-2.5 after:w-2.5 after:block after:bg-red-500 after:top-1.5 after:left-1/2 after:-translate-x-1/2 mr-8 ml-1 before:absolute before:w-[1px] before:h-8 before:-top-8 before:bg-red-500 before:left-0">
+
+                                    </div>
+                                    <!-- Content  -->
+                                    <div >
+                                        <p>Myself</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
