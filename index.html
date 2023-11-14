@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    
+
     <!-- Lilita One  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,14 +42,14 @@
     <style>
         * {
             font-family: 'Montserrat', sans-serif;
-
+            box-sizing: border-box;
         }
 
         .font-lili {
             font-family: 'Lilita One', sans-serif;
         }
 
-        .container {
+        .glass {
             background: rgba(255, 255, 255, 0.3);
             box-shadow: 0 8px 32px 0 rgba(233, 234, 255, 0.292);
             backdrop-filter: blur(10px);
@@ -63,30 +63,65 @@
             border-radius: 10px;
             border: 2px solid rgba(255, 255, 255, 0.4);
             aspect-ratio: 3/4;
-            margin: 0px 20px;
+        }
+
+        .aspect-ratio-4-3 {
+            aspect-ratio: 4/3;
         }
     </style>
 </head>
 
 <body>
     <div class="h-screen relative">
-        <div class="absolute inset-0 bg-fixed center-all normal-img" style="background-image: url(background.jpeg);">
-            <div class="container max-w-4xl pt-5 px-14">
-                <div class="font-lili text-center text-3xl mb-10 tracking-wide">About Me</div>
-                <div class="content flex gap-6 bg-red-100">
-                    <div class="basis-4/12">
-                        <div class="bg-center bg-no-repeat bg-contain h-8 my-5" style="background-image: url(https://lh3.googleusercontent.com/pw/ADCreHdaOMYiUdjIlNAkd_b5__H927yPc0fySkMRdRf1qaRgU26I1UW89DW_9LsfRbU7yvUEOfkbvk1sYWqNZIgNFAf40q51O1fZeMm91sAFycV-reJJcLw=w2400);">
+        <div class="absolute inset-0 bg-fixed center-all normal-img overflow-auto"
+            style="background-image: url(background.jpeg);">
+            <div class="glass py-8 px-14 my-14">
+                <div class="font-lili text-center text-3xl  tracking-wide">About Me</div>
+                <div class="flex gap-10 mt-5">
+                    <div class="flex-1 min-w-[200px]">
+                        <div class="bg-center bg-no-repeat bg-contain h-8"
+                            style="background-image: url(https://lh3.googleusercontent.com/pw/ADCreHdaOMYiUdjIlNAkd_b5__H927yPc0fySkMRdRf1qaRgU26I1UW89DW_9LsfRbU7yvUEOfkbvk1sYWqNZIgNFAf40q51O1fZeMm91sAFycV-reJJcLw=w2400);">
+                        </div>
+
+                        <div class="user-img normal-img bg-clip-padding my-5"
+                            style="background-image: url(https://i.pinimg.com/564x/4b/b8/73/4bb8732c5cbd0fbab68eb624f05e93b9.jpg);">
 
                         </div>
 
-                        <div class="user-img normal-img bg-clip-padding" style="background-image: url(https://i.pinimg.com/564x/4b/b8/73/4bb8732c5cbd0fbab68eb624f05e93b9.jpg);">
+                        <p class="font-lili text-center text-2xl text-white drop-shadow-lg tracking-wide uppercase">
+                            Hoàng Vinh</p>
 
+                        <div class="flex justify-center gap-3 mt-8">
+                            <a class="rounded-full p-2 glass" href="#">
+                                <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+                                    viewBox="0 0 24 24" id="facebook">
+                                    <path fill="#475569"
+                                        d="M15.12,5.32H17V2.14A26.11,26.11,0,0,0,14.26,2C11.54,2,9.68,3.66,9.68,6.7V9.32H6.61v3.56H9.68V22h3.68V12.88h3.06l.46-3.56H13.36V7.05C13.36,6,13.64,5.32,15.12,5.32Z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="rounded-full p-2 glass" href="#">
+                                <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"
+                                    viewBox="0 0 24 24" id="instagram">
+                                    <path fill="#475569"
+                                        d="M17.34,5.46h0a1.2,1.2,0,1,0,1.2,1.2A1.2,1.2,0,0,0,17.34,5.46Zm4.6,2.42a7.59,7.59,0,0,0-.46-2.43,4.94,4.94,0,0,0-1.16-1.77,4.7,4.7,0,0,0-1.77-1.15,7.3,7.3,0,0,0-2.43-.47C15.06,2,14.72,2,12,2s-3.06,0-4.12.06a7.3,7.3,0,0,0-2.43.47A4.78,4.78,0,0,0,3.68,3.68,4.7,4.7,0,0,0,2.53,5.45a7.3,7.3,0,0,0-.47,2.43C2,8.94,2,9.28,2,12s0,3.06.06,4.12a7.3,7.3,0,0,0,.47,2.43,4.7,4.7,0,0,0,1.15,1.77,4.78,4.78,0,0,0,1.77,1.15,7.3,7.3,0,0,0,2.43.47C8.94,22,9.28,22,12,22s3.06,0,4.12-.06a7.3,7.3,0,0,0,2.43-.47,4.7,4.7,0,0,0,1.77-1.15,4.85,4.85,0,0,0,1.16-1.77,7.59,7.59,0,0,0,.46-2.43c0-1.06.06-1.4.06-4.12S22,8.94,21.94,7.88ZM20.14,16a5.61,5.61,0,0,1-.34,1.86,3.06,3.06,0,0,1-.75,1.15,3.19,3.19,0,0,1-1.15.75,5.61,5.61,0,0,1-1.86.34c-1,.05-1.37.06-4,.06s-3,0-4-.06A5.73,5.73,0,0,1,6.1,19.8,3.27,3.27,0,0,1,5,19.05a3,3,0,0,1-.74-1.15A5.54,5.54,0,0,1,3.86,16c0-1-.06-1.37-.06-4s0-3,.06-4A5.54,5.54,0,0,1,4.21,6.1,3,3,0,0,1,5,5,3.14,3.14,0,0,1,6.1,4.2,5.73,5.73,0,0,1,8,3.86c1,0,1.37-.06,4-.06s3,0,4,.06a5.61,5.61,0,0,1,1.86.34A3.06,3.06,0,0,1,19.05,5,3.06,3.06,0,0,1,19.8,6.1,5.61,5.61,0,0,1,20.14,8c.05,1,.06,1.37.06,4S20.19,15,20.14,16ZM12,6.87A5.13,5.13,0,1,0,17.14,12,5.12,5.12,0,0,0,12,6.87Zm0,8.46A3.33,3.33,0,1,1,15.33,12,3.33,3.33,0,0,1,12,15.33Z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <a class="rounded-full p-2 glass" href="#">
+                                <svg class="h-7 w-7" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24"
+                                    id="github">
+                                    <path fill="#475569"
+                                        d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z">
+                                    </path>
+                                </svg>
+                            </a>
                         </div>
-
                     </div>
 
-                    <div class="myself flex-1">
-                        <p class="myself_interview mt-5 text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis,
+                    <div class="myself max-w-[500px]">
+                        <p class="myself_interview text-[15px]">Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Quis,
                             expedita. Exercitationem fugiat earum suscipit itaque. Eveniet pariatur earum asperiores
                             quam adipisci voluptate dignissimos quas! Architecto magnam facere beatae dolorem vitae?
                         </p>
@@ -104,51 +139,230 @@
                         </div>
 
                         <div class="text-[17px] font-semibold mt-4 mb-12 flex gap-3">
-                            <div class="p-1.5 relative after:absolute after:bottom-0 after:inset-x-3 after:block after:h-0.5 after:auto after:bg-red-500 text-red-500">Personal Infomation</div>
-                            <div class="p-1.5 relative after:absolute after:bottom-0 after:inset-x-3 after:block after:h-0.5 after:auto after:bg-red-500 text-red-500">Education</div>
+                            <div
+                                class="p-1.5 relative after:absolute after:bottom-0 cursor-pointer after:inset-x-3 after:block after:h-0.5 after:auto after:bg-red-500 text-red-500">
+                                Personal Infomation</div>
+                            <div
+                                class="p-1.5 relative after:absolute after:bottom-0 cursor-pointer">
+                                Education</div>
                         </div>
 
                         <div>
                             <ul>
-                                <li class="flex text-[17px] font-semibold">
+                                <li class="flex text-[17px]">
                                     <!-- Nối  -->
-                                    <div class="w-[1px] bg-red-500 relative after:rounded-full after:absolute after:h-2.5 after:w-2.5 after:block after:bg-red-500 after:top-1.5 after:left-1/2 after:-translate-x-1/2 mr-8 ml-1">
+                                    <div
+                                        class="w-[1px] bg-red-500 relative after:rounded-full after:absolute after:h-2.5 after:w-2.5 after:block after:bg-red-500 after:top-2 after:left-1/2 after:-translate-x-1/2 mr-8 ml-1">
 
                                     </div>
                                     <!-- Content  -->
-                                    <div class="text">
-                                        <p class="">Introduction</p>
-                                        
-                                        
+                                    <div class="">
+                                        <p class="text-[17px] text-red-500 font-semibold mb-2">Introduction</p>
+                                        <ul class="">
+                                            <li class="flex items-center px-4 py-1.5">
+                                                <div class="flex mr-2">
+                                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="24"
+                                                        height="24" fill="none" viewBox="0 0 24 24" id="user">
+                                                        <path fill="#C4E6FF" fill-rule="evenodd"
+                                                            d="M3 20C3 16.8289 5.10851 14.1503 8 13.2898V18C8 18.5522 8.44772 19 9 19C11.1785 19 20.9291 19 20.9291 19C20.9758 19.3266 21 19.6604 21 20C21 21.6568 19.6569 23 18 23H6C4.34315 23 3 21.6568 3 20Z"
+                                                            clip-rule="evenodd"></path>
+                                                        <path fill="#1E93FF" fill-rule="evenodd"
+                                                            d="M12 3C10.3431 3 9 4.34315 9 6C9 7.65685 10.3431 9 12 9C13.6569 9 15 7.65685 15 6C15 4.34315 13.6569 3 12 3ZM7 6C7 3.23858 9.23858 1 12 1C14.7614 1 17 3.23858 17 6C17 8.76142 14.7614 11 12 11C9.23858 11 7 8.76142 7 6Z"
+                                                            clip-rule="evenodd"></path>
+                                                        <path fill="#024493" fill-rule="evenodd"
+                                                            d="M3 20C3 16.134 6.13401 13 10 13H14C17.866 13 21 16.134 21 20C21 21.6569 19.6569 23 18 23H6C4.34315 23 3 21.6569 3 20ZM10 15C7.23858 15 5 17.2386 5 20C5 20.5523 5.44772 21 6 21H18C18.5523 21 19 20.5523 19 20C19 17.2386 16.7614 15 14 15H10Z"
+                                                            clip-rule="evenodd"></path>
+                                                    </svg>
+                                                </div>
+                                                <p class="text-[15px] font-normal">Phạm Hoàng Vinh</p>
+                                            </li>
+                                            <li class="flex items-center px-4 py-1.5">
+                                                <div class="flex mr-2">
+                                                    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg"
+                                                        data-name="Layer 1" viewBox="0 0 64 64" id="students">
+                                                        <circle cx="18" cy="29.5" r="9.5" fill="#e3fcfd"></circle>
+                                                        <path fill="#e3fcfd"
+                                                            d="M27.23077,43H8.76923A2.89156,2.89156,0,0,0,6,46v7H30V46A2.89156,2.89156,0,0,0,27.23077,43Z">
+                                                        </path>
+                                                        <circle cx="46" cy="12.5" r="9.5" fill="#42eaf5"></circle>
+                                                        <path fill="#42eaf5"
+                                                            d="M55.23077,26H36.76923A2.89156,2.89156,0,0,0,34,29v7H58V29A2.89156,2.89156,0,0,0,55.23077,26Z">
+                                                        </path>
+                                                        <rect width="42" height="8" x="2" y="53" fill="#e3fcfd"></rect>
+                                                        <path fill="#007da1"
+                                                            d="M29.5 29.5A11.5 11.5 0 1 0 18 41 11.51278 11.51278 0 0 0 29.5 29.5zM18 37a7.5 7.5 0 1 1 7.5-7.5A7.5082 7.5082 0 0 1 18 37zM57.5 12.5A11.5 11.5 0 1 0 46 24 11.5131 11.5131 0 0 0 57.5 12.5zM46 20a7.5 7.5 0 1 1 7.5-7.5A7.5082 7.5082 0 0 1 46 20zM62 34H60V29a4.89453 4.89453 0 0 0-4.76953-5H36.76953A4.89453 4.89453 0 0 0 32 29v5a2 2 0 0 0 0 4H62a2 2 0 0 0 0-4zM36 34V29a.92048.92048 0 0 1 .76953-1H55.23047A.92048.92048 0 0 1 56 29v5zM44 51H32V46a4.89412 4.89412 0 0 0-4.769-5H8.769A4.89412 4.89412 0 0 0 4 46v5H2a2.0001 2.0001 0 0 0-2 2v8a2.0001 2.0001 0 0 0 2 2H44a2.0001 2.0001 0 0 0 2-2V53A2.0001 2.0001 0 0 0 44 51zM8 46a.92014.92014 0 0 1 .769-1H27.231A.92014.92014 0 0 1 28 46v5H8zM42 59H4V55H42z">
+                                                        </path>
+                                                        <path fill="#007da1"
+                                                            d="M46,44H38a2,2,0,0,0,0,4h8a2,2,0,0,0,0-4Z"></path>
+                                                        <circle cx="52" cy="46" r="2" fill="#42eaf5"></circle>
+                                                    </svg>
+                                                </div>
+                                                <p class="text-[15px] font-normal">CNNB2023.2</p>
+                                            </li>
+                                            <li class="flex items-center px-4 py-1.5">
+                                                <div class="flex mr-2">
+                                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" width="128"
+                                                        height="128" viewBox="0 0 33.867 33.867" id="school">
+                                                        <path fill="#a8d0ff"
+                                                            d="M30.163 13.372H19.579v19.436h10.584a2.64 2.64 0 0 0 2.645-2.645V16.018a2.64 2.64 0 0 0-2.645-2.646z"
+                                                            paint-order="markers fill stroke"></path>
+                                                        <path fill="#fff"
+                                                            style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal"
+                                                            d="M28.6 25.894a1.323 1.323 0 1 0 0-2.644h-3.888a1.323 1.323 0 0 0 0 2.644z"
+                                                            color="#000" font-family="sans-serif" font-weight="400"
+                                                            overflow="visible" paint-order="markers fill stroke"></path>
+                                                        <path fill="#a8d0ff"
+                                                            d="M3.704 13.372h10.584v19.436H3.704a2.64 2.64 0 0 1-2.646-2.645V16.018a2.64 2.64 0 0 1 2.646-2.646z"
+                                                            paint-order="markers fill stroke"></path>
+                                                        <path fill="#fff"
+                                                            d="M5.267 25.894a1.323 1.323 0 1 1 0-2.644h3.888a1.323 1.323 0 0 1 0 2.644zm0-5.754a1.323 1.323 0 1 1 0-2.645h3.888a1.323 1.323 0 0 1 0 2.645zm23.332 0a1.323 1.323 0 1 0 0-2.645h-3.887a1.323 1.323 0 0 0 0 2.645z"
+                                                            color="#000" font-family="sans-serif" font-weight="400"
+                                                            overflow="visible" paint-order="markers fill stroke"
+                                                            style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal">
+                                                        </path>
+                                                        <path fill="#00a1ff"
+                                                            d="M16.933 3.704c-2.939 0-8.202 3.93-8.202 5.16v21.299a2.64 2.64 0 0 0 2.646 2.645H22.49a2.64 2.64 0 0 0 2.645-2.645v-21.3c0-1.229-5.263-5.159-8.202-5.159z"
+                                                            paint-order="markers fill stroke"></path>
+                                                        <path fill="#0067ff"
+                                                            style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal"
+                                                            d="M16.926 1.058c-.41.002-.81.131-1.145.37L6.918 7.744a1.984 1.984 0 0 0 2.303 3.233l7.712-5.496 7.711 5.496a1.985 1.985 0 0 0 2.305-3.233l-8.863-6.316c-.238-.178-.746-.371-1.16-.37Z"
+                                                            color="#000" font-family="sans-serif" font-weight="400"
+                                                            overflow="visible" paint-order="markers fill stroke"></path>
+                                                        <path fill="#fff"
+                                                            d="M16.933 25.73a3.3 3.3 0 0 0-3.307 3.308v3.77h6.615v-3.77a3.3 3.3 0 0 0-3.308-3.307z"
+                                                            paint-order="markers fill stroke"></path>
+                                                        <path fill="#fff"
+                                                            style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;shape-padding:0;shape-margin:0;inline-size:0;isolation:auto;mix-blend-mode:normal"
+                                                            d="M12.08 22.555a1.323 1.323 0 1 1 0-2.644h2.3a1.323 1.323 0 0 1 0 2.644zm7.144 0a1.323 1.323 0 1 1 0-2.644h2.3a1.323 1.323 0 0 1 0 2.644zm-7.144-5.622a1.323 1.323 0 1 1 0-2.644h2.3a1.323 1.323 0 0 1 0 2.644zm7.144 0a1.323 1.323 0 1 1 0-2.644h2.3a1.323 1.323 0 0 1 0 2.644z"
+                                                            color="#000" font-family="sans-serif" font-weight="400"
+                                                            overflow="visible" paint-order="markers fill stroke"></path>
+                                                    </svg>
+                                                </div>
+                                                <p class="text-[15px] font-normal">University of Infomation Technology
+                                                </p>
+                                            </li>
+                                            <li class="flex items-center px-4 py-1.5">
+                                                <div class="flex mr-2">
+                                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 82.83 83.01" id="map">
+                                                        <g data-name="Layer 2">
+                                                            <g data-name="Layer 1">
+                                                                <path fill="#d0d3d6"
+                                                                    d="m60.41 77.11-19 5-19-5L0 83.01l6.63-63.27 18.78-5.87 16 5 16-5 18.79 5.87 6.63 63.27-22.42-5.9z">
+                                                                </path>
+                                                                <path fill="#40b29b"
+                                                                    d="m73.42 22.01-16.01-5-16 5-16-5-16 5-5.99 57 18.99-5 19 5 19-5 19.01 5-6-57z">
+                                                                </path>
+                                                                <path fill="#40b29b"
+                                                                    d="m22.41 74.01-18.99 5 5.99-57 16-5-3 57z"></path>
+                                                                <path fill="#30917a"
+                                                                    d="m41.41 79.01-19-5 3-57 16 5v57z"></path>
+                                                                <path fill="#40b29b"
+                                                                    d="m60.41 74.01-19 5v-57l16-5 3 57z"></path>
+                                                                <path fill="#30917a"
+                                                                    d="m41.67 59.59 17.74-7.74V33.01L41.67 59.59z">
+                                                                </path>
+                                                                <path fill="#30917a"
+                                                                    d="m79.42 79.01-19.01-5-3-57 16.01 5 6 57z"></path>
+                                                                <path fill="#eec64a"
+                                                                    d="M41.42 0a23.25 23.25 0 0 0-23.26 23.25c0 12.84 20.86 36.58 23.25 36.58s23.26-23.74 23.26-36.58A23.25 23.25 0 0 0 41.42 0zm0 31.67A8.71 8.71 0 1 1 50.13 23a8.71 8.71 0 0 1-8.71 8.67z">
+                                                                </path>
+                                                                <path fill="#ecf0f1"
+                                                                    d="M41.42 11.51A11.45 11.45 0 1 0 52.87 23a11.45 11.45 0 0 0-11.45-11.49zm0 20.17A8.71 8.71 0 1 1 50.13 23a8.71 8.71 0 0 1-8.71 8.67z">
+                                                                </path>
+                                                            </g>
+                                                        </g>
+                                                    </svg>
+                                                </div>
+                                                <p class="text-[15px] font-normal">KTX khu A</p>
+                                            </li>
+                                            <li class="flex items-center px-4 py-1.5">
+                                                <div class="flex mr-2">
+                                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 32 32" id="phone">
+                                                        <path fill="#b5e3ff"
+                                                            d="M26.27,23.76l-2.82-2.83a3,3,0,0,0-4.25,0l-1.45,1.45a26.14,26.14,0,0,1-4.51-3.62,26.62,26.62,0,0,1-3.62-4.51l1.45-1.45a3,3,0,0,0,0-4.25L8.24,5.73a2.93,2.93,0,0,0-2.11-.88h0A3,3,0,0,0,4,5.73L2.64,7.08A6.37,6.37,0,0,0,1,12.33c.32,3.75,2.78,8.26,6.57,12.06S15.92,30.64,19.67,31a7.87,7.87,0,0,0,.84,0,6.07,6.07,0,0,0,4.41-1.64L26.27,28a3,3,0,0,0,.88-2.13A2.93,2.93,0,0,0,26.27,23.76Z">
+                                                        </path>
+                                                        <path fill="#9ed4ef"
+                                                            d="M26.27,26.08l-1.35,1.35a6,6,0,0,1-4.41,1.65c-.28,0-.56,0-.84,0-3.75-.32-8.26-2.78-12.06-6.58S1.43,14.28,1.06,10.55a8.77,8.77,0,0,0,0,1.78c.32,3.75,2.78,8.26,6.57,12.06S15.92,30.64,19.67,31a7.87,7.87,0,0,0,.84,0,6.07,6.07,0,0,0,4.41-1.64L26.27,28a3,3,0,0,0,.88-2.13,2.75,2.75,0,0,0-.17-.95A2.92,2.92,0,0,1,26.27,26.08Z">
+                                                        </path>
+                                                        <path fill="#c9c1f5"
+                                                            d="M30,17.11h0a1,1,0,0,1-1-1A13,13,0,0,0,16,3a1,1,0,1,1,0-2A15,15,0,0,1,31,16.12,1,1,0,0,1,30,17.11Z">
+                                                        </path>
+                                                        <path fill="#c9c1f5"
+                                                            d="M23.68,16.43h0a1,1,0,0,1-1-1,6,6,0,0,0-6.05-6.08,1,1,0,1,1,0-2,8,8,0,0,1,8.05,8.1A1,1,0,0,1,23.68,16.43Z">
+                                                        </path>
+                                                        <path fill="#b0aae8"
+                                                            d="M31,16.12a1,1,0,0,1-1,1A15,15,0,0,0,15,2a1,1,0,0,1,1-1A15,15,0,0,1,31,16.12Z">
+                                                        </path>
+                                                        <path fill="#b0aae8"
+                                                            d="M24.68,15.44a1,1,0,0,1-1,1,8,8,0,0,0-8-8.09,1,1,0,0,1,1-1,8,8,0,0,1,8.05,8.1Z">
+                                                        </path>
+                                                    </svg>
+                                                </div>
+                                                <p class="text-[15px] font-normal">0975097200</p>
+                                            </li>
+                                            <li class="flex items-center px-4 py-1.5">
+                                                <div class="flex mr-2">
+                                                    <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                                        viewBox="0 0 24 24" id="email">
+                                                        <g>
+                                                            <path fill="#fff" d="M22.5 17.5h-15l1-10h15z"></path>
+                                                            <path fill="#cce7ff" d="m8.3 9.5-.8 8h15l.8-8z"></path>
+                                                            <path fill="none" stroke="#1078ff" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-miterlimit="10"
+                                                                d="M.5 15.5h5M2.5 12.5H6M4.5 9.5h2M22.5 17.5h-15l1-10h15z">
+                                                            </path>
+                                                            <path fill="none" stroke="#1078ff" stroke-linecap="round"
+                                                                stroke-linejoin="round" stroke-miterlimit="10"
+                                                                d="m8.5 7.5 7.5 6 7.5-6z"></path>
+                                                        </g>
+                                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                                    </svg>
+                                                </div>
+                                                <p class="text-[15px] font-normal">hoangvinh9257@gmail.com</p>
+                                            </li>
+                                        </ul>
+
+
                                     </div>
                                 </li>
 
-                                <li class="flex mt-8">
+                                <li class="flex text-[17px] mt-8">
                                     <!-- Nối  -->
-                                    <div class="w-[1px] bg-red-500 relative after:rounded-full after:absolute after:h-2.5 after:w-2.5 after:block after:bg-red-500 after:top-1.5 after:left-1/2 after:-translate-x-1/2 mr-8 ml-1 before:absolute before:w-[1px] before:h-8 before:-top-8 before:bg-red-500 before:left-0">
+                                    <div
+                                        class="w-[1px] bg-red-500 relative after:rounded-full after:absolute after:h-2.5 after:w-2.5 after:block after:bg-red-500 after:top-2 after:left-1/2 after:-translate-x-1/2 before:absolute before:-top-8 before:h-8 before:w-[1px] before:bg-red-500 mr-8 ml-1">
 
                                     </div>
                                     <!-- Content  -->
-                                    <div >
-                                        <p>Hobbies</p>
+                                    <div class="flex-1">
+                                        <p class="text-[17px] text-red-500 font-semibold mb-4">Hobbies</p>
+                                        <div class="w-full flex flex-wrap gap-3">
+                                            <div class="normal-img h-40 aspect-ratio-4-3 rounded-[10px]"
+                                                style="background-image: url(https://bcabadminton.org/wp-content/uploads/2019/10/dia-chi-ban-vot-cau-long-uy-tinh.jpg);">
+                                            </div>
+                                            <div class="normal-img h-40 aspect-ratio-4-3 rounded-[10px]"
+                                                style="background-image: url(https://www.elegantthemes.com/blog/wp-content/uploads/2018/12/top11.png);">
+                                            </div>
+                                            <div class="normal-img h-40 aspect-ratio-4-3 rounded-[10px]"
+                                                style="background-image: url(https://genk.mediacdn.vn/k:2016/1-sad-music-1468921881133/hoarachoigamebithuacangtucbancangnennghenhacbuon.jpg);">
+                                            </div>
+                                            <div class="normal-img h-40 aspect-ratio-4-3 rounded-[10px]"
+                                                style="background-image: url(https://miro.medium.com/v2/resize:fit:1400/0*5zU_Ohh_DVbRDCLl);">
+                                            </div>
+
+                                        </div>
+
+
                                     </div>
                                 </li>
 
-                                <li class="flex mt-8">
-                                    <!-- Nối  -->
-                                    <div class="w-[1px] bg-red-500 relative after:rounded-full after:absolute after:h-2.5 after:w-2.5 after:block after:bg-red-500 after:top-1.5 after:left-1/2 after:-translate-x-1/2 mr-8 ml-1 before:absolute before:w-[1px] before:h-8 before:-top-8 before:bg-red-500 before:left-0">
-
-                                    </div>
-                                    <!-- Content  -->
-                                    <div >
-                                        <p>Myself</p>
-                                    </div>
-                                </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </body>
